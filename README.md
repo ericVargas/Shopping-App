@@ -1,4 +1,5 @@
-#Project 2 (Shopping App)
+#Project 2 (Trash 2 Treasure)
+-----------
 
 A simplified shopping app to offer products you want to sell. Displays full list of product info, photos and location meet ups. Offer a price and negotiate a deal. 
 
@@ -49,12 +50,12 @@ Users Table
 Include all the technologies you used along with a brief description of their functionality. Remember to include npm packages here.
 
 #Download Project & Install
+-------------
 
 This is a very important step and one that you did not need in your first project. When you have a project with a server and a database you need to give instructions to the end user on how to run it. the following is a good example of what this might look like.
 
-1. [Git clone or download this project]('https://github.com/ericVargas/Shopping-App')
+1. [Git clone or download this project]('https://github.com/andres-maza/project-2')
 2. Create a PostgreSQL database called 'project_2_db'
 3. On your terminal, run psql -d project_2_db -f migrations/migrations.sql
 4. If you haven't already, install nodemon package (npm install -g nodemon)
 5. Run nodemon, app should be available on localhost:3000
-
