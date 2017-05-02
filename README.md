@@ -1,18 +1,18 @@
-Project 2 (Trash 2 Treasure)
+# Project 2 (Trash 2 Treasure)
 -----------
 
 A simplified shopping app to offer products you want to sell. Displays full list of product info, photos and location meet ups. Offer a price and negotiate a deal. 
 
-###Wireframes
+### Wireframes
 Checkout my [Trello](https://trello.com/b/KvbvZuid/project-2-trash-2-treasure) to view my progress and ideas about the project.
 
-###User Stories
+### User Stories
 As a user, I would like to see the current listings from top to bottom, top being the newest entries. An option to submit offers towards an item. Also a clean description of the products along with pictures. 
 
-###Pseudocode
+### Pseudocode
 Include some pseudocode.
 
-###ERD
+### ERD
 List Table
 
 | PID |  product_name |  price | UserId |
@@ -40,7 +40,7 @@ Users Table
 |   3    |  Bob   |    G    |  11103  |
 |   4    | Charlie|    D    |  11105  |
 
-###Technologies used/npm Modules
+### Technologies used/npm Modules
 * HTML + CSS _Display webpage structure and design on the browser_
 * Javascript _Creates the functionality of movements on the page_
 * node.js
@@ -49,7 +49,7 @@ Users Table
 * Ebay API _Web app to inherit ebay listings_ </br></br>
 Include all the technologies you used along with a brief description of their functionality. Remember to include npm packages here.
 
-Download Project & Install
+# Download Project & Install
 -------------
 
 This is a very important step and one that you did not need in your first project. When you have a project with a server and a database you need to give instructions to the end user on how to run it. the following is a good example of what this might look like.
