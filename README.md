@@ -27,12 +27,12 @@ List _Table A_
 
 Users _Table B_
 
-| UserId |  first | lastInt | zipcode |
-|--------|:------:|:-------:|--------:|
-|   1    |  Eric  |    V    |  11373  |
-|   2    |  Amy   |    S    |  10001  |
-|   3    |  Bob   |    G    |  11103  |
-|   4    | Charlie|    D    |  11105  |
+| UserId |  first | lastInt | zipcode |     email    |
+|--------|:------:|:-------:|--------:|:------------:|
+|   1    |  Eric  |    V    |  11373  | ev@gmail.com |
+|   2    |  Amy   |    S    |  10001  | as@gmail.com |
+|   3    |  Bob   |    G    |  11103  | bg@gmail.com |
+|   4    | Charlie|    D    |  11105  | cd@gmail.com |
 
 Offers _Table C_
 
@@ -50,13 +50,11 @@ Offers _Table C_
 * Ebay Shopping API </br> _Web app to inherit Ebay listings_ 
 * Node.js
 * Express.js
-</br></br>
-Include all the technologies you used along with a brief description of their functionality. Remember to include npm packages here.
+* nodemon </br> _Auto refresh the local server_
+* pg-promise
 
 # Download Project & Install
 -------------
-
-This is a very important step and one that you did not need in your first project. When you have a project with a server and a database you need to give instructions to the end user on how to run it. the following is a good example of what this might look like.
 
 1. [Git clone or download this project]('https://github.com/ericVargas/Shopping-App')
 2. Create a PostgreSQL database called 'gotit_db'
