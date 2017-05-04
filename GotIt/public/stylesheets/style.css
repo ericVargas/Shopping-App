@@ -9,22 +9,24 @@ a {
 .container {
     background: #540309;
     width: 900px;
-    height: 600px;
+    height: 700px;
     
 }
 
 .wrapper {
     width:70%;
+    height: 500px;
     padding: 12px;
     margin: auto;
-    background: #DC522E;
+    background: #0093DD;
 }
 
 h1 {
     width: 100%;
-    height: 80px;
+    height: 50px;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 15px;
     color: #0093DD;
     font-size: 40px;
 }
@@ -34,14 +36,6 @@ ul {
     text-align: left;
 }
 
-form {
-    
-}
-
-submit {
-    
-}
-
 .delete, h3 {
-    color: #0093DD;
+    color: #FF5F23;
 }

@@ -3,10 +3,10 @@ var router = express.Router();
 var db = require('../queries')
 
 /* GET home page. */
-router.get('/', db.getAllUsers);
+router.get('/', db.getAllOffers);
 
-router.post('/', db.createUser);
+router.post('/', db.createOffer);
 
-router.delete('/:id', db.removeUser);
+router.delete('/:id', db.removeOffer);
 
 module.exports = router;
