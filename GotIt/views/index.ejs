@@ -2,7 +2,20 @@
 <html>
   <% include ./partials/head %>
   <body>
-   
+   <div class='container'>
+       <div class='wrapper'>
+          <h1><%= mainTitle %></h1>
+          <h3><%= title %></h3> 
+          <form id="myForm" method="POST">
+              <input type="text" name="first" placeholder="First name">
+              <input type="text" name="lastInt" placeholder="Last initial">
+              <input type="number" name="zipcode" placeholder="Zipcode">
+              <input type="email" name="email" placeholder="Email">
+              <input type="submit" value="Submit">
+          </form> 
+       </div>
+   </div>
+   <% if(data) { %><% include ./partials/users %><% } %>
    <% include ./partials/scripts %>
   </body>
 </html>
