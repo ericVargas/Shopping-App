@@ -1,5 +1,4 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -8,15 +7,31 @@ a {
 }
 
 .container {
+    background: #540309;
+    width: 900px;
+    height: 600px;
     
 }
 
 .wrapper {
-    
+    width:70%;
+    padding: 12px;
+    margin: auto;
+    background: #DC522E;
 }
 
 h1 {
-    
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    color: #0093DD;
+    font-size: 40px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
 }
 
 form {
@@ -27,3 +42,6 @@ submit {
     
 }
 
+.delete, h3 {
+    color: #0093DD;
+}

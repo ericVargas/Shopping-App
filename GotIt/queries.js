@@ -7,7 +7,7 @@ var connectionString = 'postgres://localhost:5432/products_db';
 var db = pgp(connectionString);
 
 function createUser(req, res, next) {
-  console.log(req.body)
+  console.log(req.body);
   req.body.age = parseInt(req.body.age);
   db.none('INSERT INTO users(first, lastInt, zipcode, email)' + 'VALUES (${first}, ${lastInt}, ${zipcode}, ${email})',
     req.body).then(res.redirect('/')).catch(function (err) {
@@ -23,9 +23,9 @@ function getAllUsers(req, res, next) {
 }
 
 function removeUser(req, res, next) {
-  console.log('inside remove')
+  console.log('inside remove');
   var userID = parseInt(req.params.id); // changed id to UserId
-  db.result('DELETE FROM users WHERE id = $1', userID)
+  db.result('DELETE FROM users WHERE UserId = $1', userID)
     .catch(function (err) {
       return next(err);
     });

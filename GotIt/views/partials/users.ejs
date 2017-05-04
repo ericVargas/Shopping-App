@@ -1,8 +1,7 @@
 <ul>
        <% data.forEach(function(d) { %>
         <li data-id=<%=d.id%>> 
-          <input class="input_item" type="text" name="first" 
-            placeholder=<%= d.first %> readonly>
+          <input class="input_item" type="text" name="first" placeholder=<%= d.first %>, <%= d.lastInt %> readonly>
           <span class="delete">delete</span>
         </li> 
        <% }) %>

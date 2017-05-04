@@ -34,5 +34,5 @@ CREATE TABLE offers (
     accepted BOOLEAN
 );
 
-INSERT INTO offers (OfferId, PID, offer, accepted)
-VALUES (1, 1, 150, false);
+INSERT INTO offers (PID, offer, accepted)
+VALUES (1, 150, false);
