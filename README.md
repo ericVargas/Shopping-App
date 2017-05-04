@@ -15,7 +15,7 @@ As a user, I would like to see the current listings from top to bottom, top bein
 * Manage functions for CRUD 
 * Extend UI build to single product page
 
-### ERD
+### Tables
 List _Table A_
 
 | PID |  product_name |  price |  brand |  descrip  | images | UserId |
@@ -48,10 +48,11 @@ Offers _Table C_
 * Javascript </br> _Creates the functionality of movement on the page_
 * PostgreSQL </br> _Datebase language to create structured tables_
 * Ebay Shopping API </br> _Web app to inherit Ebay listings_ 
-* Node.js
-* Express.js
-* nodemon </br> _Auto refresh the local server_
-* pg-promise
+* Express
+* Ejs
+* Nodemon </br> _Auto refresh the local server_
+* Pg-promise
+* Morgan </br> _Browser activity terminal logger_
 
 # Download Project & Install
 -------------
