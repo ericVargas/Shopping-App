@@ -9,8 +9,7 @@ a {
 .container {
     background: #540309;
     width: 900px;
-    height: 700px;
-    
+    height: 700px; 
 }
 
 .wrapper {
@@ -38,4 +37,9 @@ ul {
 
 .delete, h3 {
     color: #FF5F23;
+}
+
+.mainbox img {
+    width: 100px;
+    height: 100px;
 }

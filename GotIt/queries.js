@@ -18,7 +18,7 @@ function createOffer(req, res, next) {
 function getAllOffers(req, res, next) {
     console.log('all offers');
     db.any('SELECT * FROM offers')
-    .then(function(data){res.render('index', { title:'All Offers', data:data})    
+    .then(function(data){res.render('index', { title:'All Offers', data:data})  
     });
 }
 
@@ -31,8 +31,16 @@ function removeOffer(req, res, next) {
     });
 }
 
+function getAllProducts(req, res, next) {
+    console.log('all products');
+    db.any('SELECT * FROM list')
+    .then(function(data){res.render('index', { title:'All Products', data:data})
+    });
+}
+
 module.exports = {
   createOffer: createOffer,
   getAllOffers: getAllOffers,
   removeOffer: removeOffer,
+  getAllProducts: getAllProducts
 };
