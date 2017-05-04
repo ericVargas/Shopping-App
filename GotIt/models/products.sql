@@ -4,8 +4,7 @@ CREATE DATABASE products_db;
 \c products_db;
 
 CREATE TABLE list (
-    ID SERIAL PRIMARY KEY,
-    PID INTEGER,
+    PID SERIAL PRIMARY KEY,
     product TEXT,
     price INTEGER,
     brand TEXT,
@@ -14,22 +13,22 @@ CREATE TABLE list (
     UserId INTEGER
 );
 
-INSERT INTO list (PID, product, price, brand, descrip, images, UserId)
-VALUES (1, 'PS4', 200, 'Sony', '1TB, Slim', 'ps4.jpg', 1);
+INSERT INTO list (product, price, brand, descrip, images, UserId)
+VALUES ('PS4', 200, 'Sony', '1TB, Slim', 'ps4.jpg', 1);
 
 CREATE TABLE users (
-    UserId INTEGER,
+    UserId SERIAL PRIMARY KEY,
     first TEXT,
     lastInt TEXT,
     zipcode INTEGER,
     email TEXT
 );
 
-INSERT INTO users (UserId, first, lastInt, zipcode, email)
-VALUES (1, 'Eric', 'V', 11373, 'ev@gmail.com');
+INSERT INTO users (first, lastInt, zipcode, email)
+VALUES ('Eric', 'V', 11373, 'ev@gmail.com');
 
 CREATE TABLE offers (
-    OfferId INTEGER,
+    OfferId SERIAL PRIMARY KEY,
     PID INTEGER,
     offer INTEGER,
     accepted BOOLEAN

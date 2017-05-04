@@ -1,14 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var db = require('../queries')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { mainTitle: 'GotIt' });
-});
+router.get('/', db.getAllUsers);
 
-router.post('/', function(req, res, next) {
-  let data = [req.body]
-  res.render('index', { title: 'Users', data:data });
-})
+router.post('/', db.createUser);
+
+router.delete('/:id', db.removeUser);
 
 module.exports = router;
