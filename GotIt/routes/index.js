@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var db = require('../queries')
 
-/* GET home page. */
 router.get('/', db.getAllProducts);
 
 //router.get('/', db.getAllOffers);
