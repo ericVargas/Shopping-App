@@ -14,10 +14,11 @@ a {
 
 .wrapper {
     width:70%;
-    height: 500px;
+    height: 550px;
     padding: 12px;
     margin: auto;
     background: #0093DD;
+    text-align: center;
 }
 
 h1 {
@@ -36,7 +37,15 @@ ul {
 }
 
 .delete, h3 {
-    color: #FF5F23;
+    color: #540309;
+}
+
+.mainbox {
+    background: #FF5F23;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    color: #540309;
 }
 
 .mainbox img {

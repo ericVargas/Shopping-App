@@ -9,39 +9,31 @@ Checkout my [Trello](https://trello.com/b/KvbvZuid/project-2-trash-2-treasure) t
 As a user, I would like to see the current listings from top to bottom, top being the newest entries. An option to submit offers towards an item. Also a clean description of the products along with pictures. Finally display a general area where to meet up.
 
 ### Pseudocode
-* Create database with 3 tables (List, Users and Offers)
+* Create database with 2 tables (List and Offers)
 * Generate directories for views, routes and pg-promise
 * Basic UI build of HTML and CSS on landing page
 * Manage functions for CRUD 
 * Extend UI build to single product page
 
 ### Tables
-List _Table A_
+List _Table A_ 
 
-| PID |  product_name |  price |  brand |  descrip  | images | UserId |
-|-----|:-------------:|:------:|:------:|:---------:|:------:|:------:|
-| 1   |      PS4      |  $200  |  Sony  | 1TB, Slim |   url  |    1   |
-| 2   | External HDD  |   $80  |   WD   | 1TB, Red  |   url  |    1   |
-| 3   | USB Flash Drive | $20 | SanDisk | 64GB, Type A | url |    4   |
-| 4   |  DDR3 Memory  |   $50  |  PNY   |    16GB   |   url  |    3   |
+| id |    product    |  price |  brand |  descrip  | images | zipcode |
+|----|:-------------:|:------:|:------:|:---------:|:------:|--------:|
+| 1  |      PS4      |  $200  |  Sony  | 1TB, Slim |   url  |  11373  |
+| 2  | External HDD  |   $80  |   WD   | 1TB, Red  |   url  |  10001  |
+| 3  | USB Flash Drive | $20 | SanDisk | 64GB, Type A | url |  11103  |
+| 4  |  DDR3 Memory  |   $50  |  PNY   |    16GB   |   url  |  11105  |
 
-Users _Table B_
+Offers _Table B_ 
 
-| UserId |  first | lastInt | zipcode |     email    |
-|--------|:------:|:-------:|--------:|:------------:|
-|   1    |  Eric  |    V    |  11373  | ev@gmail.com |
-|   2    |  Amy   |    S    |  10001  | as@gmail.com |
-|   3    |  Bob   |    G    |  11103  | bg@gmail.com |
-|   4    | Charlie|    D    |  11105  | cd@gmail.com |
+| id |  first | lastInt |     email    | list_id | offer | accepted |
+|----|:------:|:-------:|:------------:|:-------:|:-----:|:--------:|
+| 1  |  Eric  |    V    | ev@gmail.com |    1    |  $150 |   false  |
+| 2  |  Amy   |    S    | as@gmail.com |    1    |  $180 |   true   |
+| 3  |  Bob   |    G    | bg@gmail.com |    2    |  $60  |   false  |
+| 4  | Charlie|    D    | cd@gmail.com |    2    |  $70  |   true   |
 
-Offers _Table C_
-
-| OfferId |  PID | offer | accepted |
-|---------|:----:|:-----:|:--------:|
-|    1    |   1  |  $150 |   false  |
-|    2    |   1  |  $180 |   true   |
-|    3    |   2  |  $60  |   false  |
-|    4    |   2  |  $70  |   true   |
 
 ### Technologies used/npm Modules
 * HTML + CSS </br> _Display webpage structure and design on the browser_
@@ -58,7 +50,5 @@ Offers _Table C_
 -------------
 
 1. [Git clone or download this project]('https://github.com/ericVargas/Shopping-App')
-2. Create a PostgreSQL database called 'gotit_db'
-3. On your terminal, run psql -d gotit_db -f products.sql
-4. If you haven't already, install nodemon package (npm install -g nodemon)
-5. Run nodemon, app should be available on localhost:3000
+2. On your terminal, run psql -f ./models/products.sql
+3. After that run npm run devstart, app should be available on localhost:3000
