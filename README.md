@@ -34,6 +34,7 @@ Offers _Table B_
 | 3  |  Bob   |    G    | bg@gmail.com |    2    |  $60  |   false  |
 | 4  | Charlie|    D    | cd@gmail.com |    2    |  $70  |   true   |
 
+SELECT product, price, first, lastInt, offer FROM list, offers WHERE offers.list_id = list.id;
 
 ### Technologies used/npm Modules
 * HTML + CSS </br> _Display webpage structure and design on the browser_

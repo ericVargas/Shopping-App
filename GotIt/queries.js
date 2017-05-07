@@ -26,9 +26,6 @@ function removeOffer(req, res, next) {
   console.log('inside remove');
   var offerID = parseInt(req.params.id); // changed id to UserId
   db.result('DELETE FROM offers WHERE id = $1', offerID)
-    .catch(function (err) {
-      return next(err);
-    });
 }
 
 function getAllProducts(req, res, next) {
@@ -38,9 +35,16 @@ function getAllProducts(req, res, next) {
     });
 }
 
+function getProduct(req, res, next) {
+    console.log('all products');
+    db.any('SELECT * FROM list WHERE id = $1')
+    .then(function(data){res.render('index', { title:'Product', data:data})
+    });
+}
+
 module.exports = {
+  getAllProducts: getAllProducts,
   createOffer: createOffer,
   getAllOffers: getAllOffers,
-  removeOffer: removeOffer,
-  getAllProducts: getAllProducts
+  removeOffer: removeOffer
 };

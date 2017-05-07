@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <% include ./partials/head %>
-  <body>
+<% include ./partials/boilerplate %>
+  
    <div class='container'>
       <h1>GotIt</h1>
        <div class='wrapper'>
-          <h3><%= title %></h3> 
-          <% if(data) { %><% include ./partials/products %><% } %>
+          <h2><%= title %></h2>
+          <% if(data) { %>
+          <% include ./partials/products %>
+          <% } %>
        </div>
    </div>
-   <% include ./partials/scripts %>
-  </body>
-</html>
+   
+<% include ./partials/end %>
