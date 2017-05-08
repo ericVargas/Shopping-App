@@ -1,31 +1,13 @@
 <% include ./partials/boilerplate %>
   
+  <a name='top'></a>
    <div class='container'>
       <h1>GotIt</h1>
-       <div class='wrapper'>
-          <h2><%= title %></h2>
+      <h2><%= title %></h2>
           <% if(data) { %>
-          <% include ./partials/products %>
+          <% include ./partials/list %>
           <% } %>
-       </div>
-       <div id="map"></div>
+          <a href='#top' class='top'>Back to top</a>
     </div>
-    
-    <script>
-      function initMap() {
-        var uluru = {lat: 40.7388, lng: -73.9815};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQBNGPQ8LtPEcyrQqtFlWSLpu8Bk_S4SI&callback=initMap">
-    </script>
-   
+
 <% include ./partials/end %>

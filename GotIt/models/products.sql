@@ -14,18 +14,16 @@ CREATE TABLE list (
 );
 
 INSERT INTO list (product, price, brand, descrip, images, zipcode)
-VALUES 
-('PS4', 200, 'Sony', '1TB, Slim', 'http://i.imgur.com/ILlxG2j.jpg', 10010),
-('External HDD', 50, 'WD', '1TB, Black', 'https://cdn.pixabay.com/photo/2016/02/14/19/27/external-hard-drive-1200006_1280.jpg', 10010),
-('DDR3 Memory', 50, 'PNY', '16GB', 'https://cdn.pixabay.com/photo/2015/07/23/15/53/computer-memory-857098_1280.jpg', 10010),
-('iPad', 80, 'Apple', '32GB, 1st Gen', 'url', 10010),
-('GoPro', 100, 'GoPro', 'Hero HD', 'url', 10010),
-('Mac Mini', 300, 'Apple', '2.4GHz Intel Core Duo, 8GB Ram, 256GB HDD, NVIDIA GeForce 320M', 'url', 10010),
-('Wireless Keyboard', 50, 'Apple', '1st Gen', 'url', 10010),
-('Magic Trackpad', 50, 'Apple', '1st Gen', 'url', 10010),
-('Extension Cord', 10, 'Apple', 'White', 'url', 10010),
-('Usb Adapter', 10, 'Apple', 'Usb Type A -> Usb Type C', 'url', 10010),
-
+VALUES
+('Mac Mini', 400, 'Apple', '2.4GHz Intel Core Duo, 8GB Ram, 256GB HDD, NVIDIA GeForce 320M', 'http://imgur.com/ZEqOo1O.jpg', 10010),
+('External HDD', 50, 'WD', '1TB, Black', 'http://imgur.com/kvcxdxH.jpg', 10010),
+('iPad', 80, 'Apple', '32GB, 1st Gen', 'http://imgur.com/7dE6iXd.jpg', 10010),
+('GoPro', 100, 'GoPro', 'Hero HD', 'http://imgur.com/dt3GcrX.jpg', 10010),
+('Wireless Keyboard', 50, 'Apple', '1st Gen', 'http://imgur.com/zFN1BKj.jpg', 10010),
+('Magic Trackpad', 50, 'Apple', '1st Gen', 'http://i.imgur.com/oEtzBIr.jpg', 10010),
+('Extension Cord', 10, 'Apple', 'White', 'http://i.imgur.com/I8yntzL.jpg', 10010),
+('Usb Adapter', 10, 'Apple', 'Usb Type C -> Usb', 'http://i.imgur.com/Y8BkSj6.jpg', 10010),
+('Rechargable AA Batteries', 20, 'Apple', '6 AA batteries with adapter', 'http://i.imgur.com/i5UMrs5.jpg', 10010);
 
 CREATE TABLE offers (
     id SERIAL PRIMARY KEY,

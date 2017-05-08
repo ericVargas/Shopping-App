@@ -1,0 +1,37 @@
+<% include ./partials/boilerplate %>
+  
+   <div class='container'>
+       <h1><a href='/'>GotIt</a></h1>
+       <div class='wrapper'>
+          <h2><%= title %></h2>
+          <div class='makeOffer'>
+              <% include ./partials/offer %><br> 
+              <ul>
+              <% data.forEach(function(d) { %>
+                  <li data-id=<%=d.id%>> 
+                      <p><%= d.first %>: $<%= d.offer %>   <span class="delete">delete?</span></p>
+                  </li>
+                <% }) %>
+               </ul>
+           </div>
+           <div id="map"></div>
+       </div>
+    </div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 40.7388, lng: -73.9815};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQBNGPQ8LtPEcyrQqtFlWSLpu8Bk_S4SI&callback=initMap">
+    </script>
+   
+<% include ./partials/end %>

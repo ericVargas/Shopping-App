@@ -1,0 +1,8 @@
+
+<% data.forEach(function(d) { %>
+   </br>
+    <div class="mainbox" data-id=<%=d.id%>>
+        <a href='/product'><img src=<%=d.images%>></a>
+        <p>Product: <%= d.product %><br>Price: $<%= d.price %></p>
+    </div>
+    <% }) %>
