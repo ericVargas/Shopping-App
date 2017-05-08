@@ -72,8 +72,25 @@ h2 {
     width: 200px;
     height:250px;
     position: relative;
-    top: 280px;
-    left: 80px;
+    bottom: 120px;
+    left: 100px;
+}
+
+.makeOffer img {
+    width: 230px;
+    height: 230px;
+    position: relative;
+    top: 120px;
+    left: -50px;
+}
+
+.details {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 350px;
+    top: -80px;
+    font-size: 20px;
 }
 
 ul {

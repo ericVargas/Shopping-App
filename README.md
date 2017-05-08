@@ -52,4 +52,4 @@ SELECT product, price, first, lastInt, offer FROM list, offers WHERE offers.list
 
 1. [Git clone or download this project]('https://github.com/ericVargas/Shopping-App')
 2. On your terminal, run psql -f ./models/products.sql
-3. After that run npm run devstart, app should be available on localhost:3000
+3. After that run npm run dev, app should be available on localhost:3000

@@ -19,8 +19,8 @@ VALUES
 ('External HDD', 50, 'WD', '1TB, Black', 'http://imgur.com/kvcxdxH.jpg', 10010),
 ('iPad', 80, 'Apple', '32GB, 1st Gen', 'http://imgur.com/7dE6iXd.jpg', 10010),
 ('GoPro', 100, 'GoPro', 'Hero HD', 'http://imgur.com/dt3GcrX.jpg', 10010),
-('Wireless Keyboard', 50, 'Apple', '1st Gen', 'http://imgur.com/zFN1BKj.jpg', 10010),
-('Magic Trackpad', 50, 'Apple', '1st Gen', 'http://i.imgur.com/oEtzBIr.jpg', 10010),
+('Wireless Keyboard', 50, 'Apple', '1st Gen, require two AA batteries', 'http://imgur.com/zFN1BKj.jpg', 10010),
+('Magic Trackpad', 50, 'Apple', '1st Gen, require two AA batteries', 'http://i.imgur.com/oEtzBIr.jpg', 10010),
 ('Extension Cord', 10, 'Apple', 'White', 'http://i.imgur.com/I8yntzL.jpg', 10010),
 ('Usb Adapter', 10, 'Apple', 'Usb Type C -> Usb', 'http://i.imgur.com/Y8BkSj6.jpg', 10010),
 ('Rechargable AA Batteries', 20, 'Apple', '6 AA batteries with adapter', 'http://i.imgur.com/i5UMrs5.jpg', 10010);
