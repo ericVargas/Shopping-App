@@ -34,6 +34,3 @@ CREATE TABLE offers (
     offer INTEGER,
     accepted BOOLEAN
 );
-
-INSERT INTO offers (first, lastInt, email, list_id, offer)
-VALUES ('Eric', 'V', 'ev@gmail.com', 1, 150);
