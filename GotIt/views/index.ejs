@@ -8,6 +8,24 @@
           <% include ./partials/products %>
           <% } %>
        </div>
-   </div>
+       <div id="map"></div>
+    </div>
+    
+    <script>
+      function initMap() {
+        var uluru = {lat: 40.7388, lng: -73.9815};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQBNGPQ8LtPEcyrQqtFlWSLpu8Bk_S4SI&callback=initMap">
+    </script>
    
 <% include ./partials/end %>

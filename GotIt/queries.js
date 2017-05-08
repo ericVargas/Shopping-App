@@ -10,7 +10,7 @@ function createOffer(req, res, next) {
   console.log(req.body);
   req.body.age = parseInt(req.body.age);
   db.none('INSERT INTO offers (first, lastInt, email, offer)' + 'VALUES (${first}, ${lastInt}, ${email}, ${offer})',
-    req.body).then(res.redirect('/')).catch(function (err) {
+    req.body).then(res.redirect('/users')).catch(function (err) {
       return next(err);
     });
 }
@@ -34,13 +34,13 @@ function getAllProducts(req, res, next) {
     .then(function(data){res.render('index', { title:'All Products', data:data})
     });
 }
-
-function getProduct(req, res, next) {
-    console.log('all products');
-    db.any('SELECT * FROM list WHERE id = $1')
-    .then(function(data){res.render('index', { title:'Product', data:data})
-    });
-}
+//
+//function getProduct(req, res, next) {
+//    console.log('all products');
+//    db.any('SELECT * FROM list WHERE id = $1')
+//    .then(function(data){res.render('index', { title:'Product', data:data})
+//    });
+//}
 
 module.exports = {
   getAllProducts: getAllProducts,

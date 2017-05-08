@@ -16,8 +16,15 @@ CREATE TABLE list (
 INSERT INTO list (product, price, brand, descrip, images, zipcode)
 VALUES 
 ('PS4', 200, 'Sony', '1TB, Slim', 'http://i.imgur.com/ILlxG2j.jpg', 10010),
-('External HDD', 80, 'WD', '1TB, Black', 'https://cdn.pixabay.com/photo/2016/02/14/19/27/external-hard-drive-1200006_1280.jpg', 10010),
-('DDR3 Memory', 50, 'PNY', '16GB', 'https://cdn.pixabay.com/photo/2015/07/23/15/53/computer-memory-857098_1280.jpg', 10010);
+('External HDD', 50, 'WD', '1TB, Black', 'https://cdn.pixabay.com/photo/2016/02/14/19/27/external-hard-drive-1200006_1280.jpg', 10010),
+('DDR3 Memory', 50, 'PNY', '16GB', 'https://cdn.pixabay.com/photo/2015/07/23/15/53/computer-memory-857098_1280.jpg', 10010),
+('iPad', 80, 'Apple', '32GB, 1st Gen', 'url', 10010),
+('GoPro', 100, 'GoPro', 'Hero HD', 'url', 10010),
+('Mac Mini', 300, 'Apple', '2.4GHz Intel Core Duo, 8GB Ram, 256GB HDD, NVIDIA GeForce 320M', 'url', 10010),
+('Wireless Keyboard', 50, 'Apple', '1st Gen', 'url', 10010),
+('Magic Trackpad', 50, 'Apple', '1st Gen', 'url', 10010),
+('Extension Cord', 10, 'Apple', 'White', 'url', 10010),
+('Usb Adapter', 10, 'Apple', 'Usb Type A -> Usb Type C', 'url', 10010),
 
 
 CREATE TABLE offers (
